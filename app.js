@@ -32,7 +32,10 @@ var first = new Vue({
                 name: 'Ken',
                 age: 44
             }
-        ]
+        ],
+
+
+        output: 'Hi imene ! it will be fine :D'
     },
     methods: {
         greet: function(time) {
@@ -68,6 +71,10 @@ var first = new Vue({
         addToB: function() {
             return this.b + this.age;
         }*/
+        readRefs: function() {
+            console.log(this.$refs.innerText);
+            this.output = this.$refs.input.value;
+        },
     },
     computed: {
         addToA: function() {
