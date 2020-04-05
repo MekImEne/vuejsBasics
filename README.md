@@ -1,10 +1,14 @@
 # vuejs-playlist
 
-> Learning VueJS basics
+# vuejsBasics
+
+> Learning VueJS basics from a [Youtube Tutorial][link1]
+
+[link1]: https://www.youtube.com/playlist?list=PL4cUxeGkcC9gQYgjhBoeQH7wiAyZNrYa
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 npm install
 
@@ -16,4 +20,3 @@ npm run build
 ```
 
 For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
-# vuejsBasics

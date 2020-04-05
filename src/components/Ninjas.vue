@@ -1,55 +1,58 @@
 <template>
   <div id="ninjas">
     <h1>List of Ninjas :</h1>
+
     <ul>
-      <li v-for="ninja in ninjas" v-bind:key="ninja" v-on:click="ninja.show = !ninja.show">
+      <li v-for="ninja in ninjas" v-on:click="ninja.show = !ninja.show">
         <h2>{{ninja.name}}</h2>
         <h3 v-show="ninja.show">{{ninja.speciality}}</h3>
       </li>
     </ul>
+
+    <button v-on:click="deleteNinja">Delete Ninja</button>
   </div>
 </template>
 
 <script>
 export default {
+  /*props: ["ninjas"],*/
+  /*Validation of property*/
+  props: {
+    ninjas: {
+      type: Array,
+      required: true
+    }
+  },
   data() {
     return {
       /* ninjas: ["Imene", "Abdennour", "Amina", "Aya"]*/
-
-      ninjas: [
-        {
-          name: "MEKIDECHE Imene",
-          speciality: "Vue components",
-          show: false
-        },
-        {
-          name: "AMOKRANE Abdennour",
-          speciality: "HTML Wizardry",
-          show: false
-        },
-        {
-          name: "MEHERHERA Amina",
-          speciality: "Click Events",
-          show: false
-        },
-        {
-          name: "MEK Aya",
-          speciality: "Conditionals",
-          show: false
-        },
-        {
-          name: "MEK Houda",
-          speciality: "Webpack",
-          show: false
-        },
-        {
-          name: "MEK Ikram",
-          speciality: "Data Diggin",
-          show: false
-        }
-      ]
     };
+  },
+  methods: {
+    deleteNinja: function() {
+      this.ninjas.pop();
+    }
   }
+
+  // Lifecycle Hooks
+  /*beforeCreate() {
+    alert("Before Create !");
+  },
+  created() {
+    alert("Created !");
+  },
+  beforeMount() {
+    alert("Before mount !");
+  },
+  mounted() {
+    alert("Mounted!");
+  },
+  beforeUpdate() {
+    alert("Before Updated");
+  },
+  updated() {
+    alert("updated");
+  }*/
 };
 </script>
 
