@@ -1,9 +1,9 @@
-import Vue from "vue"
+import Vue from "vue";
 //import App from './App.vue'
-import Blog from "./Blog.vue"
-import VueResource from "vue-resource"
-import VueRouter from "vue-router"
-import Routes from './routes'
+import Blog from "./Blog.vue";
+import VueResource from "vue-resource";
+import VueRouter from "vue-router";
+import Routes from "./routes";
 
 Vue.use(VueResource);
 Vue.use(VueRouter);
@@ -11,7 +11,9 @@ Vue.use(VueRouter);
 //setting-up routing
 
 const router = new VueRouter({
-    routes: Routes
+    routes: Routes,
+    // default one mode: "hash"
+    mode: "history"
 });
 
 //Custom directives :
