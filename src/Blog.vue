@@ -1,6 +1,7 @@
 <template>
   <div>
-    <add-blog></add-blog>
+    <!--<add-blog></add-blog>-->
+    <show-blogs></show-blogs>
   </div>
 </template>
 

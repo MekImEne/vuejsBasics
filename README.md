@@ -1,10 +1,10 @@
 # vuejs-playlist
 
-# vuejsBasics
+##vuejsBasics
 
-> Learning VueJS basics from a [Youtube Tutorial][link1]
+> Learning VueJS basics from a Youtube Tutorial -> [link][link]
 
-[link1]: https://www.youtube.com/playlist?list=PL4cUxeGkcC9gQYgjhBoeQH7wiAyZNrYa
+[link]: https://www.youtube.com/playlist?list=PL4cUxeGkcC9gQYgjhBoeQH7wiAyZNrYa
 
 ## Build Setup
 

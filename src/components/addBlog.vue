@@ -22,7 +22,7 @@
       <!-- Select box binding -->
       <label>Author</label>
       <select v-model="blog.author">
-        <option v-for="author in authors" v-bind:key="author">{{
+        <option v-for="author in authors" v-bind:key="author.id">{{
           author
         }}</option> </select
       ><br /><br />
@@ -41,7 +41,7 @@
       <p>{{ blog.content }}</p>
       <p>Blog Categories :</p>
       <ul>
-        <li v-for="category in blog.categories" v-bind:key="category">
+        <li v-for="category in blog.categories" v-bind:key="category.id">
           {{ category }}
         </li>
       </ul>
