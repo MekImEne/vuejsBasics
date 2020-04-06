@@ -1,6 +1,6 @@
 # vuejs-playlist
 
-##vuejsBasics
+# VueJS Basics
 
 > Learning VueJS basics from a [Youtube Tutorial][link]
 
