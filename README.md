@@ -2,9 +2,9 @@
 
 ##vuejsBasics
 
-> Learning VueJS basics from a Youtube Tutorial -> [link][link]
+> Learning VueJS basics from a [Youtube Tutorial][link]
 
-[link]: https://www.youtube.com/playlist?list=PL4cUxeGkcC9gQYgjhBoeQH7wiAyZNrYa
+[link]: https://www.youtube.com/playlist?list=PL4cUxeGkcC9gQcYgjhBoeQH7wiAyZNrYa
 
 ## Build Setup
 
